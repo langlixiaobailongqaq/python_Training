@@ -25,9 +25,11 @@ d_list = [7, 11]
 with open('stock_data.txt', 'r', encoding='utf-8') as f:
     # 股票参数名列表
     list_name = f.readline().strip('\n').split(',')
+    print(list_name)
     for line in f:
         line = line.strip('\n')
         list_data.append(line.split(','))
+    # print(list_data)
 
 while True:
     s = input('股票查询接口>>').strip()
