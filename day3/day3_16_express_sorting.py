@@ -404,11 +404,38 @@ addres_data = [['王*龙', '北京市 海淀区', '苏州街大恒科技大厦�
                ['陈*', '北京市 朝阳区', '傲城融富中心a座1804'], ['王*豪', '江苏省 盐城市', '盐城工业职业技术学院'], ['王*康', '上海市 长宁区', '哈密路398弄2号301'],
                ['刘*', '上海市 松江区', '思贤路3255号正泰生活区'], ['吴*', '浙江省 杭州市', '临江花园29幢2单元'], ['测*', '河北省', '来来来来'],
                ['娜*', '北京市 昌平区', '沙河赋腾玻璃A座'], ['史*文', '上海市 虹口区', '计算机等级简单']]
-result = {}
-for item in addres_data:
-    provice = item[1][0:3]
-    if provice in result:
-        result[provice].append(item)
+
+# 方法一：特殊的省市会有问题
+# result = {}
+# for item in addres_data:
+#     provice = item[1][0:3]
+#     if provice in result:
+#         result[provice].append(item)
+#     else:
+#         result[provice] = [item,]
+# print(result)
+
+"""
+方法二思路：
+    数据源为嵌套列表
+    结果为字典样式，key为省份，value为嵌套列表
+    取前三字符判断是否可行，特殊区域特殊处理
+"""
+
+results = {}
+others = ['新疆', '宁夏']
+for info in addres_data:
+    province = info[1][:3]
+    if info[1][:2] in others:
+        province = info[1][:2]
+    if province in results:
+        results[province].append(info)
     else:
-        result[provice] = [item,]
-print(result)
+        results[province] = [info]
+print('{')
+for province in results:
+    print(f"\t'{province}':[")
+    for value in results[province]:
+        print(f"\t\t{value},")
+    print(f"\t],")
+print('}')
