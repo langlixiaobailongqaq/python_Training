@@ -32,7 +32,7 @@ with open('stock_data.txt', 'r', encoding='utf-8') as f:
     # print(list_data)
 
 while True:
-    s = input('股票查询接口>>').strip()
+    s = input('请输入要查询的股票指令(例如：当前价>100)').strip()
     print(list_name)
     if '>' in s:
         # 命令分隔
