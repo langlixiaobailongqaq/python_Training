@@ -36,3 +36,15 @@ def change_name():
 
 change_name()
 print(name)
+
+
+d = {"name": "Alex", "age": 26, "hobbie": "大保健"}
+l = ["Rebeeca", "Katrina", "Rachel"]
+
+def change_data(info, girls):
+    info["hobbie"] = "学习"
+    girls.append("XiaoYun")
+    # d = {}
+
+change_data(d, l)
+print(d, l)

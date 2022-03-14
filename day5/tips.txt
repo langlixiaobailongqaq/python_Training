@@ -1,0 +1,1 @@
+环境搭建,功能测试,自动化测试,性能测试,安全测试,大数据,人工智能,Python,Jmeter,Posman,Fiddler,Charles,Mysql,Redis
