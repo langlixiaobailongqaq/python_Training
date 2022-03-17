@@ -1,3 +1,3 @@
 # python_Training
 
-# python-8天高强度训练
+# python-6天高强度训练
