@@ -2,7 +2,7 @@
 # -*- coding:utf-8 _*-
 """
 @author:zhengxin
-@file: word_cloud.py
+@file: day5_08_word_cloud.py
 @time: 2022/3/14  10:57
 # @describe: 生成词云
 """

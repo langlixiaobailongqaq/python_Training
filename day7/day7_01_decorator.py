@@ -2,7 +2,7 @@
 # -*- coding:utf-8 _*-
 """
 @author:zhengxin
-@file: decorator.py
+@file: day7_01_decorator.py
 @time: 2022/9/29  10:22
 # @describe: python 装饰器
 """
