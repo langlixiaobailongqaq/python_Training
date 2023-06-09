@@ -56,15 +56,3 @@ while index < value:
     # 换行
     print('\n')
 
-
-
-
-
-
-
-
-
-
-
-
-

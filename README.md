@@ -1,6 +1,6 @@
 # python_Training
 
-# python-高强度训练
+# python-高强度训练，日常Python相关知识
 ### day1：
 * 逻辑判断demo
 
@@ -84,3 +84,5 @@
 
 ### day8
 * 杨辉三角形
+* grequests 
+  * 官网文档地址：https://pypi.org/project/grequests/
